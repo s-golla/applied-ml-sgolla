@@ -74,7 +74,7 @@ htmlcov/
 # ----------------------------------------
 # Documentation (MkDocs) — build output
 # ----------------------------------------
-site/
+# site/ removed to allow MkDocs output to be committed
 
 # ----------------------------------------
 # Additional caches and temp files
