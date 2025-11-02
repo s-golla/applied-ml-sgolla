@@ -1,9 +1,11 @@
-# Project 02: Titanic Survival Analysis
+# Project 02: Machine Learning Classification Analysis
 
 ## Overview
-This project explores the Titanic dataset to build a machine learning model for predicting passenger survival. The analysis includes data exploration, preparation, and model development.
+This project explores two classic machine learning datasets - the Titanic survival prediction and Iris species classification. The analysis demonstrates different approaches to classification problems and highlights the contrasts between binary and multi-class classification.
 
-## Dataset Description
+## Part 1: Titanic Survival Analysis
+
+### Dataset Description
 The Titanic dataset (from seaborn) contains information about passengers including:
 - Demographic information (age, sex)
 - Ticket information (class, fare)
@@ -69,7 +71,82 @@ The Titanic dataset (from seaborn) contains information about passengers includi
 3. Model evaluation and optimization
 4. Cross-validation implementation
 
+## Part 2: Iris Species Classification
+
+### Dataset Description
+The Iris dataset (from scikit-learn) contains measurements for 150 iris flowers:
+- Four numerical features (sepal length/width, petal length/width)
+- Three species classes (setosa, versicolor, virginica)
+- No missing values
+- Perfectly balanced classes (50 samples per species)
+
+### Analysis Structure
+
+1. Data Exploration
+   - 150 samples with 4 features
+   - Clear feature correlations with species
+   - Well-separated classes in feature space
+
+2. Data Visualization
+   - Scatter matrix showing feature relationships
+   - Box plots demonstrating feature distributions by species
+   - Clear visual separation between species
+
+3. Model Development
+   - Multiple classifiers tested:
+     - Logistic Regression
+     - Decision Tree
+     - Random Forest
+     - K-Nearest Neighbors
+   - High accuracy across all models (~95-98%)
+
+## Comparative Analysis
+
+### Data Quality and Preparation
+1. **Titanic Dataset**
+   - Required significant preprocessing
+   - Had missing values
+   - Mixed feature types
+   - Imbalanced classes
+
+2. **Iris Dataset**
+   - Minimal preprocessing needed
+   - No missing values
+   - All numerical features
+   - Balanced classes
+
+### Model Performance
+1. **Titanic Models**
+   - Moderate accuracy (75-85%)
+   - Required careful feature engineering
+   - Affected by class imbalance
+
+2. **Iris Models**
+   - High accuracy (95-98%)
+   - Worked well with raw features
+   - Consistent performance across models
+
+### Learning Outcomes
+1. **Data Handling**
+   - Experience with different data quality scenarios
+   - Practice with various preprocessing techniques
+   - Understanding of feature engineering importance
+
+2. **Classification Challenges**
+   - Binary vs Multi-class classification
+   - Balanced vs Imbalanced datasets
+   - Real-world vs Ideal data conditions
+
 ## Technical Details
 - Language: Python
 - Key Libraries: pandas, numpy, seaborn, matplotlib, scikit-learn
-- Jupyter Notebook: ml02_sgolla.ipynb
+- Jupyter Notebooks: 
+  - Titanic Analysis: ml02_sgolla.ipynb
+  - Iris Analysis: ml02_sgolla.ipynb (Section 5)
+
+## Conclusions
+1. Data quality significantly impacts model performance
+2. Real-world data requires more preprocessing
+3. Both binary and multi-class problems can be effectively solved with similar approaches
+4. Feature engineering is crucial for complex, real-world problems
+5. Model selection should consider data characteristics and problem complexity
